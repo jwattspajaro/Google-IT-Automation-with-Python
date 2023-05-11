@@ -84,5 +84,20 @@ Great work! The puppet parser validate command checks the syntax of the manifest
 ---
 
 ### Safely Rolling out Changes and Validating Them
+What is the purpose of using multiple environments?
 
+
+⚫ To fully isolate the configurations that agents see.
+
+
+⚪ To automate testing.
+
+
+⚪ To add variety.
+
+
+⚪ To detect potential issues before they reach the other computers.
+
+✅ Correcto
+### Right on! By creating separate directories for different purposes, such as testing and production, we can ensure changes don't affect end users.
 
