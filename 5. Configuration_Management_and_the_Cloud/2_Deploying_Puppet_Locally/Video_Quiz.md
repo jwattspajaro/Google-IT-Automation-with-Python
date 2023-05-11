@@ -40,3 +40,22 @@ Nice job! When declaring resources initially, we type the resource type in lower
 
 ----
 ### Organizing Your Puppet Modules
+
+Pregunta
+
+#### What do we call a collection of manifests, and folders containing associated data?
+
+
+⚪ Libraries
+
+
+⚫ Module
+
+
+⚪ Template
+
+
+⚪ Metadata
+
+✅ Correcto
+**Great work! A module is an easy way to organize our configuration management tools.**
