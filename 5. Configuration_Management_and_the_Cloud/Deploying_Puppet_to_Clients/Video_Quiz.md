@@ -42,4 +42,6 @@ Pregunta
 ### Awesome! The CA either queues a certificate request for manual validation, or uses pre-shared data to verify before sending the certificate to the agent.
 
 ---
+### Setting up Puppet Clients and Servers
+
 
