@@ -1,3 +1,4 @@
+```python
 #!/usr/bin/env bash
 # Esta línea sirve para decirle al sistema que interprete el script usando Bash. 
 
@@ -18,3 +19,5 @@ sudo puppet agent -v --test
 
 echo $PATH
 # Finalmente, este comando imprime el valor de la variable PATH de nuevo. Esto podría ser útil para comprobar que la variable PATH ha vuelto a su valor original después de ejecutar el script.
+
+```
