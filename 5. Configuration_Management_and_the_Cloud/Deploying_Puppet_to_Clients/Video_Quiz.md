@@ -63,5 +63,21 @@ Pregunta
 Great work! The Certificate Authority creates an SSL key for the agent machine and creates a certificate request.
 
 ----
+### Modifying and Testing Manifests
+What does the puppet parser validate command do?
 
+
+⚫ Checks the syntax of the manifest.
+
+
+⚪ Runs full No Operations simulations.
+
+
+⚪ Tests automatically using facts we set to evaluate the resulting catalog.
+
+
+Forcibly applies manifests locally.
+
+✅Correcto
+Great work! The puppet parser validate command checks the syntax of the manifest to make sure it's correct.
 
