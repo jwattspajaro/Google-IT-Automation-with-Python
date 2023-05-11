@@ -64,3 +64,19 @@ Nicely done! A fact is a hash that stores information about the details of a par
 
 ----
 ### The Driving Principles of Configuration Management
+What does idempotent mean?
+
+
+⚪ There is no state being kept between runs of the agent
+
+
+⚪ We declare the state we want to achieve before running
+
+
+⚪ An action is performed a new way each time
+
+
+⚫ An action can be performed repeatedly without changing the system after the first run
+
+✅ Correcto
+Way to go! We can use an attribute like onlyif to make sure a file is changed only if it exists.
