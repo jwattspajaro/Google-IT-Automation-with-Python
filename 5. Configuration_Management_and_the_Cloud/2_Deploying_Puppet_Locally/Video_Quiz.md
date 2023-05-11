@@ -19,3 +19,4 @@ Pregunta
 Awesome! Manifest files are where we store the rules to be applied.
 
 ---
+### Managing Resource Relationships
