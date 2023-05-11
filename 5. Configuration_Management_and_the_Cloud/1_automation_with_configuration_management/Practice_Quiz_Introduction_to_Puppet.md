@@ -84,7 +84,7 @@ class AutoConfig {
 ⚪ Providers can be specified
 
 
-⚪ Configuration management is simplified
+⚫ **Configuration management is simplified**
 
 
 ⚪ The title is changeable
@@ -98,7 +98,7 @@ What defines which provider will be used for a particular resource?
 
 1 punto
 
-Puppet assigns providers based on the resource type and data collected from the system.
+⚫ **Puppet assigns providers based on the resource type and data collected from the system.**
 
 
 ⚪ A menu allows you to choose providers on a case-by-case basis.
