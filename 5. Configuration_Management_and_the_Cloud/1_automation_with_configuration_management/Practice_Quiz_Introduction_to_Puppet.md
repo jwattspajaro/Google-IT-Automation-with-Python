@@ -1,5 +1,8 @@
-.
-Pregunta 1
+✅ ### ¡Felicitaciones! ¡Aprobaste!
+### Calificación recibida 100 %
+#### Para Aprobar 80 % o más
+
+#### Pregunta 1
 A Puppet agent inspects /etc/conf.d, determines the OS to be Gentoo Linux, then activates the Portage package manager. What is the provider in this scenario?  
 
 ⚪ 1 punto
@@ -19,9 +22,9 @@ The Puppet agent
 #### Pregunta 2
 Which of the following examples show proper Puppet syntax?  
 
-⚪ 1 punto
+⚫ 1 punto
+```python
 
-1234567891011121314
 class AutoConfig {
   package { 'Executable':
     ensure => latest,
@@ -32,11 +35,9 @@ class AutoConfig {
   }
   service { 'executable.exe':
     enable  => true,
-
-
-
-
-123456789101112
+```
+⚪
+```python
 class AutoConfig :
   package ''Executable':
     ensure => latest,
@@ -47,11 +48,9 @@ class AutoConfig :
   
   service  'executable.exe':
     enable  => true,
-
-
-
-
-1234567891011121314
+```
+⚪
+```python
 class AutoConfig {
   package { 'Executable':
     ensure == latest,
@@ -62,11 +61,9 @@ class AutoConfig {
   }
   service { 'executable.exe':
     enable  == yes,
-
-
-
-
-1234567891011121314
+```
+⚪
+```python
 class AutoConfig {
   package { 'Executable':
     assure=> latest,
@@ -78,7 +75,7 @@ class AutoConfig {
   program{ 'executable.exe':
     activate => true,
 
-
+```
 3.
 Pregunta 3
 What is the benefit of grouping resources into classes when using Puppet?
