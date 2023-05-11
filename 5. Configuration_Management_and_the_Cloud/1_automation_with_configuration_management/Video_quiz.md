@@ -41,4 +41,23 @@ Keep it up! By grouping related resources together, we can more easily understan
 ¡Avanza! Al agrupar los recursos relacionados, podemos comprender más fácilmente la configuración y realizar cambios en el futuro.
 
 ---
+### What are domain-specific languages?
 
+Pregunta
+
+What is a fact in Puppet?
+
+
+⚫ A variable representing characteristics of a system
+
+
+⚪ A type of parameter
+
+
+⚪ A type of resource
+
+
+⚪ A variable representing packages
+
+✅ Correcto
+Nicely done! A fact is a hash that stores information about the details of a particular system.
