@@ -81,3 +81,8 @@ Forcibly applies manifests locally.
 ✅Correcto
 Great work! The puppet parser validate command checks the syntax of the manifest to make sure it's correct.
 
+---
+
+### Safely Rolling out Changes and Validating Them
+
+
