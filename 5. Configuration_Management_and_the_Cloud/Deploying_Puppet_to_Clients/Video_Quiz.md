@@ -21,3 +21,4 @@ Pregunta
 Nice job! Different kinds of nodes are defined, allowing different sets of rule catalogs to apply to different types of machines.
 
 ----
+### Puppet's Certificate Infrastructure
