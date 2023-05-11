@@ -39,4 +39,4 @@ When we declare a resource type, how do we differentiate between the original re
 Nice job! When declaring resources initially, we type the resource type in lowercase. When we reference a resource relationship from another file, we capitalize the resource name being referenced.
 
 ----
-
+### Organizing Your Puppet Modules
