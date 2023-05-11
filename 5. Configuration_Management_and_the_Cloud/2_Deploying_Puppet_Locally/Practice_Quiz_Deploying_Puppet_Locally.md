@@ -77,9 +77,13 @@ What is contained in the metadata.json file of a Puppet module?
 What does Puppet syntax dictate we do when referring to another resource attribute?
 
 ⚪ Enter the package title before curly braces
+
 ⚪ Follow the attribute with a semicolon
-⚪ **Capitalize the attribute**
+
+⚫ **Capitalize the attribute**
+
 ⚪ Type the attribute in lowercase
+
 
 ✅ Correcto
 Great work! When defining resource types, we write them in lowercase, then capitalize them when referring to them from another resource attribute.
