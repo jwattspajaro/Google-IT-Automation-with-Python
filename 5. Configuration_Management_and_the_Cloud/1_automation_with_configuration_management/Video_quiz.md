@@ -61,3 +61,6 @@ What is a fact in Puppet?
 
 ✅ Correcto
 Nicely done! A fact is a hash that stores information about the details of a particular system.
+
+----
+### The Driving Principles of Configuration Management
