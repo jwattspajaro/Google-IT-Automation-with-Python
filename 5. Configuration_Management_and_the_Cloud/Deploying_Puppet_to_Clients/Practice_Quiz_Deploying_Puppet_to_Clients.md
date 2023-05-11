@@ -11,7 +11,7 @@ When defining nodes, how do we identify a specific node that we want to set rule
 
 ⚪ By using the machine’s MAC address
 
-⚪ **By specifying the node's Fully Qualified Domain Names (FQDNs)**
+⚫ **By specifying the node's Fully Qualified Domain Names (FQDNs)**
 
 ⚪ User-defined names
 
@@ -30,7 +30,7 @@ When a Puppet agent evaluates the state of each component in the manifest, it us
 
 ⚪ Certificates
 
-⚪ **Templates**
+⚫ **Templates**
 
 ⚪ Modules
 
@@ -47,7 +47,7 @@ What is the first thing that happens after a node connects to the Puppet master 
 
 ⚪ The Puppet-master requests third-party authentication.
 
-⚪ **The node requests a certificate.**
+⚫ **The node requests a certificate.**
 
 ⚪ The user can immediately add modules.
 
@@ -66,7 +66,7 @@ What does FQDN stand for, and what is it?
 
 ⚪ Fairly Quantized Directory Network, which is a network consisting of equitable counted folders
 
-⚪ **Fully Qualified Domain Name, which is the full address for a node**
+⚫ **Fully Qualified Domain Name, which is the full address for a node**
 
 ✅ Correcto
 > A fully qualified domain name (FQDN) is the unabbreviated name for a particular computer, or server. There are two elements of the FQDN: the hostname and the domain name.
@@ -79,7 +79,7 @@ What type of cryptographic security framework does Puppet use to authenticate in
 
 ⚪ Single Sign On (SSO)
 
-⚪ **Public Key Infrastructure (PKI)**
+⚫ **Public Key Infrastructure (PKI)**
 
 ⚪ Fully Qualified Domain Name (FQDN)
 
