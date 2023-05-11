@@ -43,5 +43,25 @@ Pregunta
 
 ---
 ### Setting up Puppet Clients and Servers
+Pregunta
+
+### What kind of security encryption is used when the Puppet Certificate Authority validates the identity of a node?
+
+
+⚫ Secure Sockets Layer (SSL)
+
+
+⚪ Secure Shell (SSH)
+
+
+⚪ Pretty Good Privacy (PGP)
+
+
+⚪ Transport Layer Security (TLS)
+
+✅ Correcto
+Great work! The Certificate Authority creates an SSL key for the agent machine and creates a certificate request.
+
+----
 
 
