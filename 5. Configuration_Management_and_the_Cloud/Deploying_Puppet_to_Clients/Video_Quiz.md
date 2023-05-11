@@ -33,7 +33,7 @@ Pregunta
 ⚪ To manage templates
 
 
-⚫ To validate the identity of each machine	
+⚫ **To validate the identity of each machine**
 
 
 ⚪ To handle push/pull requests
@@ -48,7 +48,7 @@ Pregunta
 ### What kind of security encryption is used when the Puppet Certificate Authority validates the identity of a node?
 
 
-⚫ Secure Sockets Layer (SSL)
+⚫ **Secure Sockets Layer (SSL)**
 
 
 ⚪ Secure Shell (SSH)
@@ -67,7 +67,7 @@ Great work! The Certificate Authority creates an SSL key for the agent machine a
 What does the puppet parser validate command do?
 
 
-⚫ Checks the syntax of the manifest.
+⚫ **Checks the syntax of the manifest.**
 
 
 ⚪ Runs full No Operations simulations.
@@ -87,7 +87,7 @@ Great work! The puppet parser validate command checks the syntax of the manifest
 What is the purpose of using multiple environments?
 
 
-⚫ To fully isolate the configurations that agents see.
+⚫ **To fully isolate the configurations that agents see.**
 
 
 ⚪ To automate testing.
