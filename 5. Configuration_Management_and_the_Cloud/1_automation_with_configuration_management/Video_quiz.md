@@ -13,5 +13,5 @@ What is the most basic unit for modeling in Puppet?
 
 🔲 Correcto
 
-✅ #### Nailed it! The most basic unit in Puppet is a resource, such as user, group, file, service or package.
+✅ Nailed it! The most basic unit in Puppet is a resource, such as user, group, file, service or package.
 ---
