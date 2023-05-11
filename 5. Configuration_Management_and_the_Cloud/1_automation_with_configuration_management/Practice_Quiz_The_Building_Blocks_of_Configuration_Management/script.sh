@@ -1,4 +1,4 @@
-```python
+```
 #!/usr/bin/env bash
 # Esta línea sirve para decirle al sistema que interprete el script usando Bash. 
 
