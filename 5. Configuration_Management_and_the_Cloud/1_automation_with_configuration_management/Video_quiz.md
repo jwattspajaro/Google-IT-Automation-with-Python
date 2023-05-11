@@ -24,6 +24,7 @@ What is the most basic unit for modeling in Puppet?
 
 
 ⛝ **To ensure efficiency and convenience for future changes**
+
    **Para garantizar la eficiencia y la comodidad de los cambios futuros**
 
 
