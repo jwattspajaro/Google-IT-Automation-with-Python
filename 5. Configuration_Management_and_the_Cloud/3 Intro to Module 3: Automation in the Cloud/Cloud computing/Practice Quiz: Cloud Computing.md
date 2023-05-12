@@ -13,7 +13,7 @@ Pregunta 1
 ⚪ Private cloud
 
 
-Public cloud
+⚫ Public cloud
 
 
 ⚪ Multi-cloud
