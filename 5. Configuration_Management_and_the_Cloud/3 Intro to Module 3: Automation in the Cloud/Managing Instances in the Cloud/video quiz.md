@@ -20,3 +20,47 @@
 ---
 
 ### Customizing VMs in GCP
+
+Pregunta
+
+#### It’s important to know where to copy our systemd service file on Linux in order to configure our scripts as services. Do you remember the location of the systemd directory?
+
+
+⚪ /user/bin
+
+
+⚪ /root
+
+
+⚪ /home
+
+
+⚫ **/etc/systemd/system/**
+
+       ✅ Correcto
+        Nice job! etc/systemd/system/ is the default systemd directory in many Linux distros, including Red Hat Linux.
+        
+--- 
+### Templating a Customized VM
+
+#### What does the gcloud init command do?
+
+
+⚪ Displays Google Cloud connection data
+
+
+⚪ Creates a new virtual machine
+
+
+⚫ **Authenticates the connection between our virtual machine and Google Cloud**
+
+
+⚪ Initializes configuration tests
+
+        ✅Correcto
+        Awesome! The gcloud init command sets up the authentication procedure between our virtual machine and Google Cloud.
+        
+ ----
+ 
+
+
