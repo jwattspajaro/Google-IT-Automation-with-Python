@@ -8,7 +8,7 @@
 
 Official documentation is here: # https://cloud.google.com/load-balancing/docs/https/
 
-# https://geekflare.com/gcp-load-balancer/
+### https://geekflare.com/gcp-load-balancer/
 
 ### Interesting articles about hybrid setups:
 
