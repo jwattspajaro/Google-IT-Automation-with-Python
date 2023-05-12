@@ -38,3 +38,34 @@ Great job! Infrastructure as a Service (IaaS) provides users with the bare minim
 Nice work! Adding capacity to our network to meet demand—whether vertically or horizontally—is considered to be upscaling.
 
 ---
+### Evaluating the Cloud
+Pregunta
+
+#### What are some advantages to using cloud services? (Select all that apply)
+
+
+What are some advantages to using cloud services? (Select all that apply)
+
+
+🔳 **Offload complicated setups to the provider**
+
+✅Correcto
+Great work! Cloud services provide many advantages, such as outsourcing support and maintenance, simplifying configuration management, and letting the provider take care of security.
+
+
+🔳 **Outsource troubleshooting and maintenance to the provider**
+
+✅Correcto
+Great work! Cloud services provide many advantages, including simplifying configuration management, outsourcing support and maintenance, and letting the provider take care of security.
+
+
+🔳 **Letting the provider worry about complicated security measures**
+
+✅Correcto
+Great work! Cloud services provide several advantages, like putting the provider in charge of security.
+
+
+🔲 Avoiding bandwidth or connection issues
+
+---
+
