@@ -68,4 +68,22 @@ What are some advantages to using cloud services? (Select all that apply)
 🔲 Avoiding bandwidth or connection issues
 
 ---
+### Migrating to the Cloud
+Pregunta
 
+#### What does the phrase lift and shift refer to? 
+
+
+⛝ **Migrating to the Cloud by virtualizing the current configuration**
+
+
+🔲 Upscaling some nodes in the network while downscaling others
+
+
+🔲 Scaling horizontally
+
+
+🔲 Using a container
+
+       ✅ Correcto
+        Nailed it! When we migrate from traditional server configurations to the Cloud, we lift the current configuration and shift it to a virtual machine.
