@@ -99,9 +99,9 @@ Pregunta 5
 🔲 init
 
 
-**instances**
+🔳 **instances**
 
-      Correcto
+      ✅Correcto
       Woohoo! The instances parameter that follows the compute parameter tells gcloud that we want to manage our VMs on the instance level.
 
 
