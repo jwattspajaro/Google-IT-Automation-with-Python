@@ -36,3 +36,20 @@
       Nice job! Pages are alerts that need immediate human attention, and are often in the form of SMS or email.
       
 ----
+### Service-Level Objectives
+If our service has a Service Level Objective (SLO) of four-nines, what is our error budget measured in downtime percentage?
+
+
+⚪ .001%
+
+
+⚪ 1%
+
+
+⚪ .1%
+
+
+⚫ **.01%**
+
+             ✅Correcto
+            Nice job! If we have an SLO of 99.99%, that gives us an error budget of .01%.
