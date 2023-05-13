@@ -80,4 +80,4 @@ What is the term referring to a network of hosts spread in different geographica
 
 ⚪ Platform as a Service
 
-* **Content delivery network**
+⚫ **Content delivery network**
