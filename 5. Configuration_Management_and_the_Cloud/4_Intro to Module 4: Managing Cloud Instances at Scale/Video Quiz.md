@@ -56,4 +56,21 @@
  
  ----
 ### Understanding Limitations
-#### 
+#### What is the purpose of a rate limit?
+
+
+⚪ Prevent over-provisioning of a certain resource.
+
+
+⚪ Provide additional capacity.
+
+
+⚪ To prevent overloading the entire system with one service.
+
+
+⚫ **To restrict the frequency of login attempts.**
+
+            ✅ Correcto
+            Right on! Cloud providers will often enforce rate limits on resource-hungry service calls to prevent one service from overloading the entire system.
+            
+
