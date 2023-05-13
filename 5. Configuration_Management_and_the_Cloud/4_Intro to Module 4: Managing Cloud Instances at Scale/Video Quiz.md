@@ -36,3 +36,20 @@
        Nice job! The Round-robin approach serves clients one at a time, starting with the first, and making rounds until it reaches the beginning again.
        
 -----
+### Change Management
+#### Automation tools are used to manage the software development phase's build and test functions. Which of the following is the set of development practices focusing on these aspects?
+
+
+⚫ **Continuous Deployment**
+
+
+⚪ Continuous Integration
+
+
+⚪ Pre-Prod
+
+
+⚪ Test environment
+
+          ✅ Correcto
+            Great work! Continuous Integration means the software is built, uploaded, and tested constantly.
