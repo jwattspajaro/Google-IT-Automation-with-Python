@@ -1,5 +1,6 @@
 ## Practice Quiz: Building Software for the Cloud
-* **Total points: 5**
+## ¡Felicitaciones! ¡Aprobaste!
+Calificación recibida 100 %
 * **Score: 100%**
 
 <br>
