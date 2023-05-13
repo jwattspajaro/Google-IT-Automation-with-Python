@@ -37,7 +37,7 @@
       
 ----
 ### Service-Level Objectives
-If our service has a Service Level Objective (SLO) of four-nines, what is our error budget measured in downtime percentage?
+#### If our service has a Service Level Objective (SLO) of four-nines, what is our error budget measured in downtime percentage?
 
 
 ⚪ .001%
@@ -53,3 +53,23 @@ If our service has a Service Level Objective (SLO) of four-nines, what is our er
 
              ✅Correcto
             Nice job! If we have an SLO of 99.99%, that gives us an error budget of .01%.
+   
+ ----
+ 
+ ### Basic Monitoring in GCP
+ #### What type of policy requires us to set up a condition which notifies us when it’s triggered?
+
+
+⚪ Login Policy
+
+
+⚫ **Alerting Policy**
+
+
+⚪ Security Policy
+
+
+⚪ Bug Reporting Policy
+
+            ✅Correcto
+            Great work! An Alerting Policy specifies the conditions that trigger alerts, and the actions to be taken when these alerts are triggered, like sending an email address notification. 
