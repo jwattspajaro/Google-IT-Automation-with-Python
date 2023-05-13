@@ -25,8 +25,11 @@ What is latency in terms of Cloud storage?
 Which of the following statements about sticky sessions are true? (Select all that apply.)
 
 🔳 **All requests from the same client always go to the same backend server.**
+
 🔲 Sticky sessions maintain an even load.
+
 🔳 **They should only be used when needed.**
+
 🔳 **They can cause problems during migration.**
 
 > Sticky sessions route requests for a particular session to the same machine that first served the request for that session.
