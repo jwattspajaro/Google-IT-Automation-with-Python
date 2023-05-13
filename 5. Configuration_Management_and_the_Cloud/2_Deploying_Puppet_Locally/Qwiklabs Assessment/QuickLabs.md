@@ -11,6 +11,15 @@ Luego, cambia los permisos del archivo manifests/init.pp para poder editarlo:
 Copy 
 ```
     sudo chmod 646 manifests/init.pp
+    
+output    
+    class packages {
+
+    package { 'python-requests':
+        ensure => installed,
+    }
+
+
 ```
 
 Copy 
