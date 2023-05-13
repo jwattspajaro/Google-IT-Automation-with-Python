@@ -65,8 +65,11 @@ To set up a new alert, we have to configure the _____ that triggers the alert.
 When we collect metrics from inside a system, this is known as ______ monitoring.
 
 ⚫ **White-box**
+
 ⚪ .dbBlack-box
+
 ⚪ .dbNetwork
+
 ⚪ .dbLog
 
 > A white-box monitoring system is one that collects metrics internally, from within the system being monitored.
