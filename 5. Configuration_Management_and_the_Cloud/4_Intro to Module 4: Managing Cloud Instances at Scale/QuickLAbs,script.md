@@ -4,6 +4,7 @@ Primero, verifica el estado de Apache2. Si Apache2 falló al iniciar, es posible
 bash
 Copy code
 '''
+
         sudo systemctl status apache2
 '''   
 Intenta reiniciar Apache2:
