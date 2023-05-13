@@ -53,3 +53,7 @@
 
           ✅ Correcto
             Great work! Continuous Integration means the software is built, uploaded, and tested constantly.
+ 
+ ----
+### Understanding Limitations
+#### 
