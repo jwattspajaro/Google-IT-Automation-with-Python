@@ -93,7 +93,14 @@ Copy
 De nuevo en la instancia de VM, ejecuta el agente de Puppet para aplicar los cambios:
 
 Copy 
-```
+``` 
+    intala esto antes 
+    sudo apt install puppet
+    wget https://apt.puppetlabs.com/puppet-release-stretch.deb
+    sudo dpkg -i puppet-release-stretch.deb
+    sudo apt-get update
+    sudo apt-get install puppet
+
     sudo puppet agent -v --test
 
 ```
