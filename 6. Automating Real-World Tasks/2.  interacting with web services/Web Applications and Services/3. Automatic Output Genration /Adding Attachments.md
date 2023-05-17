@@ -7,21 +7,21 @@ Let's dive in and break down how that works.
 In order for the recipient of your message to understand what to do with an attachment, you  need to label the attachment with a ***MIME type*** and ***subtype*** to tell them what sort of file you’re sending. ***The Internet Assigned Numbers Authority (IANA)*** ([iana.org](https://iana.org/)) [hosts a registry of valid MIME types](https://www.iana.org/assignments/media-types/media-types.xhtml). If you know the correct type and subtype of the files you’ll be sending, you can use those values directly. If you don't know, you can use the Python **mimetypes** module to make a good guess!
 
 ```
->>> import os.path
->>> attachment_path = "/tmp/example.png"
->>> attachment_filename = os.path.basename(attachment_path)
->>> import mimetypes
->>> mime_type, _ = mimetypes.guess_type(attachment_path)
->>> print(mime_type)
-image/png
+1. >>> import os.path
+2. >>> attachment_path = "/tmp/example.png"
+3. >>> attachment_filename = os.path.basename(attachment_path)
+4. >>> import mimetypes
+5. >>> mime_type, _ = mimetypes.guess_type(attachment_path)
+6. >>> print(mime_type)
+7. image/png
 ```
 
 Alright, that **mime_type** string contains the MIME type and subtype, separated by a slash. The **EmailMessage** type needs a MIME type and subtypes as separate strings, so let's split this up:
 
 ```
->>> mime_type, mime_subtype = mime_type.split('/', 1)
->>> print(mime_type)
-image
+1. >>> mime_type, mime_subtype = mime_type.split('/', 1)
+2. >>> print(mime_type)
+3. image
 >>> print(mime_subtype)
 png
 ```
@@ -29,11 +29,11 @@ png
 Now, finally! Let's add the attachment to our message and see what it looks like.
 
 ```
->>> with open(attachment_path, 'rb') as ap:
-...     message.add_attachment(ap.read(),
-...                            maintype=mime_type,
-...                            subtype=mime_subtype,
-...                            filename=os.path.basename(attachment_path))
+1. >>> with open(attachment_path, 'rb') as ap:
+2. ...     message.add_attachment(ap.read(),
+3. ...                            maintype=mime_type,
+4. ...                            subtype=mime_subtype,
+5. ...                            filename=os.path.basename(attachment_path))
 ... 
 >>> print(message)
 Content-Type: multipart/mixed; boundary="===============5350123048127315795=="
