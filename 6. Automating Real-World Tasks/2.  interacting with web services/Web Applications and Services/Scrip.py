@@ -1,34 +1,39 @@
+#!/usr/bin/env python3
+
 import os
 import requests
 
-def send_feedback(directory):
-    """
-    Esta función recorre todos los archivos .txt en el directorio especificado,
-    crea un diccionario a partir de su contenido y luego realiza una solicitud POST a un sitio web con el diccionario como JSON.
-    Args:
-        directory: Directorio donde se encuentran los archivos de retroalimentación.
-    Returns:
-        None
-    """
-    # Lista todos los archivos .txt en el directorio de retroalimentación
-    for file in os.listdir(directory): 
-        format = ["title","name","date","feedback"]
-        content = {}
+# Define the directory
+dir = "/data/feedback/"
 
-        # Abre cada archivo, lee las líneas y las guarda en el diccionario 'content'
-        with open(f'{directory}/{file}', 'r') as txtfile:
-            for index, line in enumerate(txtfile):
-                line = line.replace("\n", "")
-                content[format[index]] = line.strip('\n')
+# List all text files
+files = [f for f in os.listdir(dir) if f.endswith('.txt')]
 
-        # Realiza una solicitud POST a la dirección del sitio web con el diccionario 'content' como JSON
-        response = requests.post("http://35.225.95.53/feedback/", json=content)
+# Iterate over each file
+for file in files:
+    with open(dir + file, 'r') as f:
+        lines = f.readlines()
 
-        # Comprueba si la solicitud POST ha tenido éxito
-        if not response.ok:
-            raise Exception(f"POST failed! | Status code: {response.status_code} | File: {file}")
-        print("Feedback added!")
+        # Extract data from the file
+        title = lines[0].strip()
+        name = lines[1].strip()
+        date = lines[2].strip()
+        feedback = lines[3].strip()
 
-if __name__ == '__main__':
-    dir = "/data/feedback/"
-    send_feedback(dir)
+        # Build the dictionary
+        data = {
+            "title": title,
+            "name": name,
+            "date": date,
+            "feedback": feedback,
+        }
+
+        # Post the data to the company's website
+        response = requests.post("http://<corpweb-external-IP>/feedback", json=data)
+
+        # Check the status of the request
+        if response.status_code != 201:
+            print("Error: Failed to upload feedback. Status code:", response.status_code)
+        else:
+            print("Feedback uploaded successfully.")
+
