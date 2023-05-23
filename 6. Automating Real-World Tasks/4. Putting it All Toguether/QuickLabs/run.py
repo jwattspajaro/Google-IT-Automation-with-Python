@@ -1,44 +1,29 @@
-#! /usr/bin/env python3
- 
-import os 
+import os
 import requests
-import re 
+import re
 
-# desc_path = os.path.expanduser('~') + '/supplier-data/descriptions/' 
-# image_path = os.path.expanduser('~') + '/supplier-data/images/'
-desc_path = 'supplier-data/descriptions/' 
+desc_path = 'supplier-data/descriptions/'
 image_path = 'supplier-data/images/'
 
 text_files = sorted(os.listdir(desc_path))
-jpeg_images = sorted([image_name for image_name in os.listdir(image_path) if '.jpeg' in image_name])
-# print(text_files)
-# print(jpeg_images)
+jpeg_images = sorted([image_name for image_name in os.listdir(image_path) if image_name.endswith('.jpeg')])
 
 list_content = []
-image_counter = 0
 
 for file in text_files:
-    format = ['name', 'weight', 'description']
-    
-    with open(desc_path + file, 'r') as f:
+    with open(os.path.join(desc_path, file), 'r') as f:
         data = {}
-        contents = f.read().split("\n")[0:3] 
+        contents = f.read().split("\n")[:3]
+        contents[1] = int(re.search(r'\d+', contents[1]).group())
 
-        contents[1] = int((re.search(r'\d+', contents[1])).group()) 
-        counter = 0
-        for content in contents:
-       
-            data[format[counter]] = content
-            counter += 1
-
-        data['image_name'] = jpeg_images[image_counter]
+        data['name'], data['weight'], data['description'] = contents
+        data['image_name'] = jpeg_images[len(list_content)]
 
         list_content.append(data)
-        image_counter += 1
-
 
 for item in list_content:
     resp = requests.post('http://127.0.0.1:80/fruits/', json=item)
-    if resp.status_code != 201: 
-        raise Exception('POST error status={}'.format(resp.status_code))
-    print('Created feedback ID: {}'.format(resp.json()["id"]))
+    if resp.status_code != 201:
+        raise Exception('Error al hacer POST, estado={}'.format(resp.status_code))
+    print('Creado ID de retroalimentación: {}'.format(resp.json()["id"]))
+
