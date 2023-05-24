@@ -10,9 +10,9 @@ Funciones y palabras clave
 
 - Las palabras clave son palabras reservadas que se utilizan para construir instrucciones. Nos encontramos brevemente con for y in en nuestro primer ejemplo de Python, y usaremos un montón de otras palabras clave a medida que avanzamos en el curso. Como referencia, estas son todas las palabras clave reservadas:
 
-|FALSO  | clase | finalmented     | es    | devolver   |
+|   FALSO  | clase | finalmented     | es    | devolver   |
+|----------|-------|-----------------|-------|------------|
 
-|----------|------|------------|------------|------------||
 
 
 
