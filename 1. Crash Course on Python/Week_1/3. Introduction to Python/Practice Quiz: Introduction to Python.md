@@ -27,7 +27,7 @@ Python is an example of what type of programming language?
 
 ⚫ **General purpose scripting language**
 
-* Client-side scripting language
+⚪ Client-side scripting language
 
 ⚪ Machine language
 
