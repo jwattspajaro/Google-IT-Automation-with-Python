@@ -23,12 +23,15 @@ My first Python program
 
 Python is an example of what type of programming language?
 
-* Platform-specific scripting language
-* **General purpose scripting language**
-* Client-side scripting language
-* Machine language
+⚪ Platform-specific scripting language
 
-> Python is one of the general purpose scripting languages that are widely used for scripting and automation.
+⚫ **General purpose scripting language**
+
+* Client-side scripting language
+
+⚪ Machine language
+
+⚪ Python is one of the general purpose scripting languages that are widely used for scripting and automation.
 
 <br>
 
