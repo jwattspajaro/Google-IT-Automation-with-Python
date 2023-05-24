@@ -10,7 +10,7 @@ What is a computer program?
 
 ⚪ The syntax and semantics of Python.
 
-VThe overview of what the computer will have to do to solve some automation problem
+⚪ VThe overview of what the computer will have to do to solve some automation problem
 
 ⚫ **A step-by-step recipe of what needs to be done to complete a task, that gets executed by the computer.**
 
