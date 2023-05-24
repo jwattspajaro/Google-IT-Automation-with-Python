@@ -13,6 +13,10 @@ Funciones y palabras clave
 |   FALSO    | clase     | finalmented     |   es       |   devolver    |
 |------------|-----------|-----------------|------------|---------------|
 |   True     |   defe    |    from         |  nonlocal  |    while      |
+|   and      |   del     |     global      |     not    |    whit       |
+|   as       |   elif    |      if         |      or    |   yield       |
+|  assert    |  else     |    import       |    pass    |               |
+|  break     |  except   |      in         |    raise   |               |
 
 
 
