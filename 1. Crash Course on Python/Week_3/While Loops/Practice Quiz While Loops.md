@@ -7,26 +7,26 @@ What are while loops in Python?
 
 1 / 1 punto
 
-While loops let the computer execute a set of instructions while a condition is true.
+☑️ While loops let the computer execute a set of instructions while a condition is true.
 
 
-While loops instruct the computer to execute a piece of code a set number of times.
+ ⬜ While loops instruct the computer to execute a piece of code a set number of times.
 
 
-While loops let us branch execution on whether or not a condition is true.
+ ⬜ While loops let us branch execution on whether or not a condition is true.
 
 
-While loops are how we initialize variables in Python.
+ ⬜ While loops are how we initialize variables in Python.
 
-Correcto
-Right on! Using while loops we can keep executing the same group of instructions until the condition stops being true.
+✅ Correcto
+	Right on! Using while loops we can keep executing the same group of instructions until the condition stops being true.
 
 2.
 Pregunta 2
 Fill in the blanks to make the print_prime_factors function print all the prime factors of a number. A prime factor is a number that is prime and divides another without a remainder.
 
 1 / 1 punto
-123456789101112131415161718
+``` PYTHON
 def print_prime_factors(number):
   # Start with two, which is the first prime
   factor = 2
@@ -37,11 +37,10 @@ def print_prime_factors(number):
       # If it is, print it and divide the original number
       print(factor)
       number = number / factor
-
-Restablecer
-Correcto
-You nailed it! You've got the code to print all the right
-prime factors. Well done!
+```
+✅Correcto
+	You nailed it! You've got the code to print all the right
+	prime factors. Well done!
 
 3.
 Pregunta 3
@@ -51,7 +50,7 @@ Note: Try running your function with the number 0 as the input, and see what you
 
 
 1 / 1 punto
-1234567891011121314
+``` PYTHON
 def is_power_of_two(n):
   # Check if the number can be divided by two without a remainder
   while  n % 2 == 0 and n != 0:
@@ -61,19 +60,18 @@ def is_power_of_two(n):
     return True
   return False
   
-
-
-Restablecer
-Correcto
-Awesome! You fixed a tricky error that was hard to find and
-the function now behaves correctly.
+```
+✅ Correcto
+	Awesome! You fixed a tricky error that was hard to find and
+	the function now behaves correctly.
 
 4.
 Pregunta 4
 Fill in the empty function so that it returns the sum of all the divisors of a number, without including it. A divisor is a number that divides into another without a remainder.
 
 1 / 1 punto
-1234567891011121314151617181920
+
+``` PYTHON
 def sum_divisors(n):
   sum, num = 0, 1
   while num < n:
@@ -85,17 +83,17 @@ def sum_divisors(n):
   # Return the sum of all divisors of n, not including n
   return sum
 
-Restablecer
-Correcto
-Well done, you! You've written a complex while loop and got
-Python to do the work for you.
+``` 
+✅ Correcto
+	Well done, you! You've written a complex while loop and got
+	Python to do the work for you.
 
 5.
 Pregunta 5
 The multiplication_table function prints the results of a number passed to it multiplied by 1 through 5. An additional requirement is that the result is not to exceed 25, which is done with the break statement. Fill in the blanks to complete the function to satisfy these conditions.
 
 1 / 1 punto
-123456789101112131415161718192021
+``` PYTHON
 def multiplication_table(number):
 	# Initialize the starting point of the multiplication table
 	multiplier = 1
@@ -107,7 +105,7 @@ def multiplication_table(number):
 			break
 		print(str(number) + "x" + str(multiplier) + "=" + str(result))
 
-Restablecer
-Correcto
-Excellent! You completed the multiplication table with all
-of the required criteria, and it looks great!
+``` 
+✅Correcto
+	Excellent! You completed the multiplication table with all
+	of the required criteria, and it looks great!
