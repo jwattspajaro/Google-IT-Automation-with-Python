@@ -193,16 +193,37 @@ What's the value of this Python expression?
 ``` 
 1 / 1 punto
 
-True
+☑️  True
 
 
-False
+⬜  False
 
 
-10
+⬜  10
 
 
-5*2
+⬜  5*2
 
 Correcto
 Right on! When using the "and" operator, a statement is True if both parts of the conditional are True.
+
+The fractional_part function divides the numerator by the denominator, and returns just the fractional part (a number between 0 and 1). Complete the body of the function so that it returns the right number.
+Note: Since division by 0 produces an error, if the denominator is 0, the function should return 0 instead of attempting the division.
+
+1 / 1 punto
+``` PYTHON
+def fractional_part(numerator, denominator):
+	# Operate with numerator and denominator to
+	return (numerator / denominator) % 1 if denominator else 0
+
+# keep just the fractional part of the quotient
+	return 0
+
+print(fractional_part(5, 5)) # Should be 0
+print(fractional_part(5, 4)) # Should be 0.25
+print(fractional_part(5, 3)) # Should be 0.66...
+
+``` 
+ ✅ Correcto
+	Well done! You're handling the math operations, as well as
+	division by 0, perfectly!
