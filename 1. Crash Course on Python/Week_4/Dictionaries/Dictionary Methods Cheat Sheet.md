@@ -6,9 +6,9 @@
 
 #### Operations
 
-- len(dictionary) - Returns the number of items in the dictionary
+- **len(dictionary)** - Returns the number of items in the dictionary
 
-- for key in dictionary - Iterates over each key in the dictionary
+- **for key in dictionary** - Iterates over each key in the dictionary
 
 - for key, value in dictionary.items() - Iterates over each key,value pair in the dictionary
 
