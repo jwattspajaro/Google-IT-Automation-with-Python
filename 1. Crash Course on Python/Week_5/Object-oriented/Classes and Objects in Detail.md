@@ -1,0 +1,10 @@
+### Classes and Objects in Detail
+
+We can use the type() function to figure out what class a variable or value belongs to. For example, type(" ") tells us that this is a string class. The only attribute in this case is the string value, but there are a bunch of methods associated with the class. We've seen the upper() method, which returns the string in all uppercase, as well as isnumeric() which returns a boolean telling us whether or not the string is a number. You can use the dir() function to print all the attributes and methods of an object. Each string is an instance of the string class, having the same methods of the parent class. Since the content of the string is different, the methods will return different values. You can also use the help() function on an object, which will return the documentation for the corresponding class. This will show all the methods for the class, along with parameters the methods receive, types of return values, and a description of the methods.
+
+---
+### Clases y objetos en detalle
+
+Podemos usar la función type() para averiguar a qué clase pertenece una variable o valor. Por ejemplo, type(" ") nos dice que esta es una clase de cadena. El único atributo en este caso es el valor de la cadena, pero hay un montón de métodos asociados con la clase. Hemos visto el método upper(), que devuelve la cadena en mayúsculas, así como isnumeric(), que devuelve un valor booleano que nos indica si la cadena es un número o no. Puede usar la función dir() para imprimir todos los atributos y métodos de un objeto. Cada cadena es una instancia de la clase de cadena y tiene los mismos métodos de la clase principal. Dado que el contenido de la cadena es diferente, los métodos devolverán valores diferentes. También puede usar la función de ayuda () en un objeto, que devolverá la documentación para la clase correspondiente. Esto mostrará todos los métodos para la clase, junto con los parámetros que reciben los métodos, los tipos de valores devueltos y una descripción de los métodos.
+
+---
