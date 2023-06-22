@@ -15,8 +15,8 @@ The format_address function separates out parts of the address string into new s
 	print(highlight_word("Have a nice day", "nice"))
 	print(highlight_word("Shhh, don't be so loud!", "loud"))
 	print(highlight_word("Automating with Python is fun", "fun"))
-```
-# 3. Pregunta 3
+
+
 
 # Un profesor con dos asistentes, Jamie y Drew, quiere una lista de asistencia de los estudiantes
 # en el orden en que llegaron al aula. Drew fue el primero en anotar qué estudiantes llegaron,
@@ -25,6 +25,7 @@ The format_address function separates out parts of the address string into new s
 # en el orden de llegada de cada estudiante. Jamie envió un seguimiento diciendo que su lista está en orden inverso.
 # Completa los pasos para combinarlas en una lista de la siguiente manera: el contenido de la lista de Drew,
 # seguido de la lista de Jamie en orden inverso, para obtener una lista precisa de los estudiantes tal como llegaron.
+```
 
 ``` PYTHON
 	def combine_lists(list1, list2):
@@ -50,24 +51,24 @@ The highlight_word function changes the given word in a sentence to its upper-ca
 	print(highlight_word("Have a nice day", "nice"))
 	print(highlight_word("Shhh, don't be so loud!", "loud"))
 	print(highlight_word("Automating with Python is fun", "fun"))
+ 
 ```
 
 #### 3. Pregunta 3
 
 A professor with two assistants, Jamie and Drew, wants an attendance list of the students, in the order that they arrived in the classroom. Drew was the first one to note which students arrived, and then Jamie took over. After the class, they each entered their lists into the computer and emailed them to the professor, who needs to combine them into one, in the order of each student's arrival. Jamie emailed a follow-up, saying that her list is in reverse order. Complete the steps to combine them into one list as follows: the contents of Drew's list, followed by Jamie's list in reverse order, to get an accurate list of the students as they arrived. 
 
-
 ``` PYTHON
 
-	def combine_lists(list1, list2):
-	    # Genera una nueva lista que contiene los elementos de list2
-	    # Seguidos de los elementos de list1 en orden inverso
-	    return list2 + list1[::-1]
-	
-	Jamies_list = ["Alice", "Cindy", "Bobby", "Jan", "Peter"]
-	Drews_list = ["Mike", "Carol", "Greg", "Marcia"]
-	
-	print(combine_lists(Jamies_list, Drews_list))
+def combine_lists(list1, list2):
+    # Genera una nueva lista que contiene los elementos de list2
+    # Seguidos de los elementos de list1 en orden inverso
+    return list2 + list1[::-1]
+
+Jamies_list = ["Alice", "Cindy", "Bobby", "Jan", "Peter"]
+Drews_list = ["Mike", "Carol", "Greg", "Marcia"]
+
+print(combine_lists(Jamies_list, Drews_list))
 
 ```
 
