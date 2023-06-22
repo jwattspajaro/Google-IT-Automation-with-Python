@@ -6,35 +6,37 @@ Para Aprobar 80 % o más
 #### 1. Pregunta 1
 
 The format_address function separates out parts of the address string into new strings: house_number and street_name, and returns: "house number X on street named Y". The format of the input string is: numeric house number, followed by the street name which may contain numbers, but never by themselves, and could be several words long. For example, "123 Main Street", "1001 1st Ave", or "55 North Center Drive". Fill in the gaps to complete this function.
+
 ``` PYTHON
- # before returning the result?
-    edef format_address(address_string):
-  # Declare variables
-  hourse_number = ''
-  street_name = ''
-  # Separate the address string into parts
-  address_string = address_string.split()
+	def highlight_word(sentence, word):
+	    # Reemplaza la primera aparición de la palabra en la oración por su versión en mayúsculas
+	    return sentence.replace(word, word.upper(), 1)
+	
+	print(highlight_word("Have a nice day", "nice"))
+	print(highlight_word("Shhh, don't be so loud!", "loud"))
+	print(highlight_word("Automating with Python is fun", "fun"))
+```
+# 3. Pregunta 3
 
-  # Traverse through the address parts
-  for string in address_string:
-    # Determine if the address part is the
-    # house number or part of the street name
-    if string.isdigit():
-      hourse_number = string
-    # Does anything else need to be done lse:
-      street_name += string + ' '
-  
-  # Return the formatted string  
-  return "house number {} on street named {}".format(hourse_number, street_name)
+# Un profesor con dos asistentes, Jamie y Drew, quiere una lista de asistencia de los estudiantes
+# en el orden en que llegaron al aula. Drew fue el primero en anotar qué estudiantes llegaron,
+# y luego Jamie se hizo cargo. Después de la clase, cada uno ingresó sus listas en la computadora
+# y las envió por correo electrónico al profesor, quien necesita combinarlas en una sola lista
+# en el orden de llegada de cada estudiante. Jamie envió un seguimiento diciendo que su lista está en orden inverso.
+# Completa los pasos para combinarlas en una lista de la siguiente manera: el contenido de la lista de Drew,
+# seguido de la lista de Jamie en orden inverso, para obtener una lista precisa de los estudiantes tal como llegaron.
 
-print(format_address("123 Main Street"))
-# Should print: "house number 123 on street named Main Street"
+``` PYTHON
+	def combine_lists(list1, list2):
+	    # Genera una nueva lista que contiene los elementos de list2
+	    # Seguidos de los elementos de list1 en orden inverso
+	    return list2 + list1[::-1]
+	
+	Jamies_list = ["Alice", "Cindy", "Bobby", "Jan", "Peter"]
+	Drews_list = ["Mike", "Carol", "Greg", "Marcia"]
+	
+	print(combine_lists(Jamies_list, Drews_list))
 
-print(format_address("1001 1st Ave"))
-# Should print: "house number 1001 on street named 1st Ave"
-
-print(format_address("55 North Center Drive"))
-# Should print "house number 55 on street named North Center Drive"
 ```
 
 #### 2.Pregunta 2
@@ -42,52 +44,55 @@ print(format_address("55 North Center Drive"))
 The highlight_word function changes the given word in a sentence to its upper-case version. For example, highlight_word("Have a nice day", "nice") returns "Have a NICE day". Can you write this function in just one line?
 
 ``` PYTHON
-def highlight_word(sentence, word):
-	return(sentence.replace(word, word.upper(), 1))
-
-print(highlight_word("Have a nice day", "nice"))
-print(highlight_word("Shhh, don't be so loud!", "loud"))
-print(highlight_word("Automating with Python is fun", "fun"))
-``
+	def highlight_word(sentence, word):
+		return(sentence.replace(word, word.upper(), 1))
+	
+	print(highlight_word("Have a nice day", "nice"))
+	print(highlight_word("Shhh, don't be so loud!", "loud"))
+	print(highlight_word("Automating with Python is fun", "fun"))
+```
 
 #### 3. Pregunta 3
 
 A professor with two assistants, Jamie and Drew, wants an attendance list of the students, in the order that they arrived in the classroom. Drew was the first one to note which students arrived, and then Jamie took over. After the class, they each entered their lists into the computer and emailed them to the professor, who needs to combine them into one, in the order of each student's arrival. Jamie emailed a follow-up, saying that her list is in reverse order. Complete the steps to combine them into one list as follows: the contents of Drew's list, followed by Jamie's list in reverse order, to get an accurate list of the students as they arrived. 
 
-``` PYTHON
-def combine_lists(list1, list2):
-  # Generate a new list containing the elements of list2
-  # Followed by the elements of list1 in reverse order
-  return list2 + list1[::-1]
-	
-Jamies_list = ["Alice", "Cindy", "Bobby", "Jan", "Peter"]
-Drews_list = ["Mike", "Carol", "Greg", "Marcia"]
 
-print(combine_lists(Jamies_list, Drews_list))
+``` PYTHON
+
+	def combine_lists(list1, list2):
+	    # Genera una nueva lista que contiene los elementos de list2
+	    # Seguidos de los elementos de list1 en orden inverso
+	    return list2 + list1[::-1]
+	
+	Jamies_list = ["Alice", "Cindy", "Bobby", "Jan", "Peter"]
+	Drews_list = ["Mike", "Carol", "Greg", "Marcia"]
+	
+	print(combine_lists(Jamies_list, Drews_list))
+
 ```
 
 #### 4. Pregunta 4
 Use a list comprehension to create a list of squared numbers (n*n). The function receives the variables start and end, and returns a list of squares of consecutive numbers between start and end inclusively.
 For example, squares(2, 3) should return [4, 9].
 ``` PYTHON
-def squares(start, end):
-	return [ num**2 for num in range(start, end+1) ]
-
-print(squares(2, 3)) # Should be [4, 9]
-print(squares(1, 5)) # Should be [1, 4, 9, 16, 25]
-print(squares(0, 10)) # Should be [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+	def squares(start, end):
+		return [ num**2 for num in range(start, end+1) ]
+	
+	print(squares(2, 3)) # Should be [4, 9]
+	print(squares(1, 5)) # Should be [1, 4, 9, 16, 25]
+	print(squares(0, 10)) # Should be [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ``` 
 #### 5. Pregunta 5
 Complete the code to iterate through the keys and values of the car_prices dictionary, printing out some information about each one.
 
 ``` PYTHON
-def car_listing(car_prices):
-  result = ""
-  for cars in car_prices:
-    result += "{} costs {} dollars".format(cars, car_prices[cars]) + "\n"
-  return result
-
-print(car_listing({"Kia Soul":19000, "Lamborghini Diablo":55000, "Ford Fiesta":13000, "Toyota Prius":24000}))
+	def car_listing(car_prices):
+	  result = ""
+	  for cars in car_prices:
+	    result += "{} costs {} dollars".format(cars, car_prices[cars]) + "\n"
+	  return result
+	
+	print(car_listing({"Kia Soul":19000, "Lamborghini Diablo":55000, "Ford Fiesta":13000, "Toyota Prius":24000}))
 ```
 #### 6. Pregunta 6
 
