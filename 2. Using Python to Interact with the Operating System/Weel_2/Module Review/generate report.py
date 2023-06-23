@@ -29,10 +29,11 @@ def write_report(dictionary, report_file):
             f.write(str(k) + ':' + str(dictionary[k]) + '\n')
         f.close()
 
-employee_list = read_employees('/home/student-00-3ab4479a1342/data/employees.csv')
+employee_list = read_employees('/home/student-###########.csv')
 print(employee_list)
 
 dictionary = process_data(employee_list)
 print(dictionary)
 
-write_report(dictionary, '/home/student-00-3ab4479a1342/data/report.txt')
+write_report(dictionary, '/home/student-###########/report.txt')
+# debes colocar tu usuario
