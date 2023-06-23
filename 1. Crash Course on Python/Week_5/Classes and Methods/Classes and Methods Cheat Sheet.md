@@ -44,3 +44,49 @@ def function_name(parameters):
     body_of_function
 
 ```
+----
+### Hoja de referencia de clases y métodos (opcional)
+
+#### Hoja de referencia de clases y métodos
+
+En los últimos videos, hemos visto cómo definir clases y métodos en Python. Aquí encontrará un resumen de todo lo que hemos cubierto, para que pueda consultarlo cuando necesite un repaso.
+
+``` PYTHON
+class ClassName:
+    def method_name(self, other_parameters):
+        body_of_method
+```
+Clases e instancias
+
+- Las clases definen el comportamiento de todas las instancias de una clase específica.
+
+- Cada variable de una clase específica es una instancia u objeto.
+
+- Los objetos pueden tener atributos, que almacenan información sobre el objeto.
+
+- Puedes hacer que los objetos funcionen llamando a sus métodos.
+
+- El primer parámetro de los métodos (self) representa la instancia actual.
+
+- Los métodos son como funciones, pero solo se pueden usar a través de una clase.
+
+#### Métodos especiales
+
+- Los métodos especiales comienzan y terminan con __.
+
+- Los métodos especiales tienen nombres específicos, como __init__ para el constructor o __str__ para la conversión a cadena.
+
+#### Documentación de clases, métodos y funciones
+- Puede agregar documentación a clases, métodos y funciones usando cadenas de documentación justo después de la definición. Como esto:
+``` PYTHON
+class ClassName:
+    """Documentation for the class."""
+    def method_name(self, other_parameters):
+        """Documentation for the method."""
+        body_of_method
+        
+def function_name(parameters):
+    """Documentation for the function."""
+    body_of_function
+
+```
