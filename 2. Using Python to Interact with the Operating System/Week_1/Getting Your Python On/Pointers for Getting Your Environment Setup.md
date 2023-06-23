@@ -28,4 +28,5 @@ Package management systems help you better manage the software installed on your
 [Installing Python 3 on MacOS with Homebrew](https://programwithus.com/learn/python/install-python3-mac)
 
 [Package management basics on Linux](https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg)
+
 Python in the Microsoft Store for Windows 10
