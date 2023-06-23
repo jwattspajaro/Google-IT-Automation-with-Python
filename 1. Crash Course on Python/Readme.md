@@ -18,4 +18,6 @@ We'll start off by diving into the basics of writing a computer program. Along t
 * Fundamental Programming Concepts
 * Basic Python SyntaxPython Programming
 * Object-Oriented Programming (OOP)
-https://coursera.org/share/b71698928aaa068338abf1bd936cc1b3
+
+![image](https://github.com/jwattspajaro/Automation_with_Python/assets/18930760/1508c9b5-4d08-4c29-a63d-2f2411b3e794)
+
