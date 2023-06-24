@@ -1,3 +1,4 @@
+
 # Practice Notebook - Errors and Exceptions
 
 Below we have a function that removes an item from an input list.  Run it to see what it does.
@@ -26,19 +27,21 @@ print(RemoveValue(27))
 
     ---------------------------------------------------------------------------
 
-   ---------------------------------------------------------------------------
-      ValueError                                Traceback (most recent call last)
-      <ipython-input-2-3f8c37f416f6> in <module>
-      ----> 1 print(RemoveValue(27))
-      
-      <ipython-input-1-597531fc6dcc> in RemoveValue(myVal)
-            2 
-            3 def RemoveValue(myVal):
-      ----> 4     my_list.remove(myVal)
-            5     return my_list
-            6 
-      
-      ValueError: list.remove(x): x not in list
+    ValueError                                Traceback (most recent call last)
+
+    <ipython-input-2-3f8c37f416f6> in <module>
+    ----> 1 print(RemoveValue(27))
+    
+
+    <ipython-input-1-597531fc6dcc> in RemoveValue(myVal)
+          2 
+          3 def RemoveValue(myVal):
+    ----> 4     my_list.remove(myVal)
+          5     return my_list
+          6 
+
+
+    ValueError: list.remove(x): x not in list
 
 
 From the above output we see that our function now raises a <font color=red>**ValueError**</font>.  This is because we are trying to remove a number from a list that is not in the list.  When we removed 27 from the list the first time, it was no longer available in the list to be removed a second time. Python is letting us know that the number 27 no longer makes sense for our `RemoveValue()` function. 
@@ -49,7 +52,8 @@ We'd like to take control of the error messaging here and pre-empt this error. F
 ```python
 def RemoveValue(myVal):
     if myVal not in my_list:
-        raise ValueError("Value must be in the given list")
+        myList.sort()
+    return myList
     else:
         my_list.remove(myVal)
     return my_list
@@ -201,4 +205,5 @@ print(Guess(participants))
     None
 
 
+Was the above output *None*? If not, go back to the code block containing your revised `Guess()` function and make edits so that the output is *None* for the previous code block.  If the above output was indeed *None*, congratulations! You've mastered the basics of handling errors and exceptions in Python and you are all done with this notebook!
 Was the above output *None*? If not, go back to the code block containing your revised `Guess()` function and make edits so that the output is *None* for the previous code block.  If the above output was indeed *None*, congratulations! You've mastered the basics of handling errors and exceptions in Python and you are all done with this notebook!
