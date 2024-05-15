@@ -1,5 +1,8 @@
-| Código | Descripción                                        |
-| ------ | -------------------------------------------------- |
-| 15     | Tiempo de espera al recuperar información          |
-| 13     | Fallo de conexión a la base de datos               |
-| 12     | Se intentó agregar información a un ticket cerrado |
+| Código | Descripción                                            |
+| ------ | ------------------------------------------------------ |
+| 15     | Tiempo de espera al recuperar información              |
+| 13     | Fallo de conexión a la base de datos                   |
+| 12     | Intento de agregar información a un ticket cerrado     |
+| 10     | Permiso denegado para cerrar el ticket                 |
+| 9      | Modificación del ticket mientras se actualizaba        |
+| 7      | El ticket especificado no existe                       |
