@@ -1,69 +1,72 @@
-### Practice Quiz: Introduction to GitHub
-* **Total points: 4**
-* **Score: 100%**
+## Practice Quiz: Solving Conflicts
+
+- [x] Total points: 5
+- [x] Score: 100%
 
 <br>
 
 ### Question 1
 
-When we want to update our local repository to reflect changes made in the remote repository, which command would we use?
+If you’re making changes to a local branch while another user has also made changes to the remote branch, which command will trigger a merge?
 
-⬜ git clone <URL>
+- [ ] git push
+- [x] git pull
+- [ ] git rebase
+- [ ] git fetch
 
-⬜ git push
-
-✅ **git pull**
-
-⬜ git commit -a -m
-
-> git pull updates the local repository by applying changes made in the remote repository.
+> The `git pull` command runs `git fetch` with the given parameters, then calls `git merge` to merge the retrieved branch heads into the current branch.
 
 <br>
 
 ### Question 2
 
-git config --global credential.helper cache allows us to configure the credential helper, which is used for ...what?
+Which of the following is a reason to use rebase instead of merging?
 
-⬜ Troubleshooting the login process
+- [x] When you want to keep a linear commit history
+- [ ] When you want a set of commits to be clearly grouped together in history
+- [ ] When you are on a public branch
+- [ ] When pushing commits to a remote branch
 
-⬜ Dynamically suggesting commit messages
-
-⬜ Allowing configuration of automatic repository pulling
-
-✅ **Allowing automated login to GitHub**
-
-> By configuring the credential helper, we can avoid having to type in our username and password repeatedly.
+> `git rebase` is useful for maintaining a clean, linear commit history.
 
 <br>
 
 ### Question 3
 
-Name two ways to avoid having to enter our password when retrieving and when pushing changes to the repo. (Check all that apply)
+Where should we keep the latest stable version of the project?
 
-⬜ Implement a post-receive hook
+- [ ] The master branch
+- [x] A separate branch from the master branch
+- [ ] The debug branch
+- [ ] A remote branch
 
-✅ **Use a credential helper**
-
-✅ **Create an SSH key-pair**
-
-⬜ Use the git commit -a -m command.
-
-> The credential helper caches our credentials for a time window, so that we don't need to enter our password with every interaction.
-
-> Great job! We can create an SSH key-pair and store the public key in our profile, so that GitHub recognizes our computer.
+> It's common practice to keep the latest version in the master branch and the latest stable version in a separate branch.
 
 <br>
 
 ### Question 4
 
-Before we have a local copy of a commit, we should download one using which command?
+Which of the following statements represent best practices for collaboration? (check all that apply)
 
-⬜ git commit -a -m
+- [x] When working on a big change, it makes sense to have a separate feature branch.
+- [ ] You should always rebase changes that have been pushed to remote repos.
+- [x] Always synchronize your branches before starting any work on your own.
+- [x] Avoid having very large changes that modify a lot of different things.
 
-⬜ git push
+> - This lets you work on new changes, while still enabling you to fix bugs in the other branch.
+> - That way, whenever you start changing code, you know that you're starting from the most recent version, and you minimize the chances of conflicts or the need for rebasing.
+> - Instead, try to make changes as small as possible, as long as they’re self-contained.
 
-⬜ git pull
+<br>
 
-✅ **git clone <URL>**
+### Question 5
 
-> If the repository already exists locally, this may raise an error.
+What command would we use to change the base of the current branch?
+
+- [ ] git checkout <branchname>
+- [ ] git pull
+- [x] git rebase <branchname>
+- [ ] git fetch
+
+> You can also use `git rebase <branchname>` to change the base of the current branch to be `<branchname>`.
+
