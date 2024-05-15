@@ -1,0 +1,5 @@
+| Código | Descripción                                        |
+| ------ | -------------------------------------------------- |
+| 15     | Tiempo de espera al recuperar información          |
+| 13     | Fallo de conexión a la base de datos               |
+| 12     | Se intentó agregar información a un ticket cerrado |
