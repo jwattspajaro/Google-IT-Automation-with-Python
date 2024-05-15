@@ -1,8 +1,8 @@
-| Código | Descripción                                            |
-| ------ | ------------------------------------------------------ |
-| 15     | Tiempo de espera al recuperar información              |
-| 13     | Fallo de conexión a la base de datos                   |
-| 12     | Intento de agregar información a un ticket cerrado     |
-| 10     | Permiso denegado para cerrar el ticket                 |
-| 9      | Modificación del ticket mientras se actualizaba        |
-| 7      | El ticket especificado no existe                       |
+| Error                                           | Count |
+| ----------------------------------------------- | ----- |
+| Timeout while retrieving information            | 15    |
+| Connection to DB failed                         | 13    |
+| Tried to add information to closed ticket       | 12    |
+| Permission denied while closing ticket          | 10    |
+| The ticket was modified while updating          | 9     |
+| Ticket doesn't exist                            | 7     |
