@@ -1,6 +1,6 @@
 ## Practice Quiz: Introduction to Debugging
-* **Total points: 5**
-* **Score: 100%**
+☑️ **Total points: 5**
+☑️ **Score: 100%**
 
 <br>
 
@@ -8,20 +8,13 @@
 
 What is part of the final step when problem solving?
 
-* ## Practice Quiz: Introduction to Debugging
-* **Total points: 5**
-* **Score: 100%**
+☐ Documentation
 
-<br>
+☑️ Long-term remediation
 
-### Question 1
+☐ Finding the root cause
 
-What is part of the final step when problem solving?
-
-* Documentation
-* **Long-term remediation**
-* Finding the root cause
-* Gathering information
+☐ Gathering information
 
 > Long-term remediation is part of the final step when problem solving.
 
@@ -31,10 +24,13 @@ What is part of the final step when problem solving?
 
 Which tool can you use when debugging to look at library calls made by the software?
 
-* top
-* strace
-* tcpdump
-* **ltrace**
+☐ top
+
+☐ strace
+
+☐ tcpdump
+
+☑️ ltrace
 
 > the ltrace tool is used to look at library calls made by the software.
 
@@ -44,10 +40,10 @@ Which tool can you use when debugging to look at library calls made by the softw
 
 What is the first step of problem solving?
 
-* Prevention
-* **Gathering information**
-* Long-term remediation
-* Finding the root cause
+☐ Prevention
+☑️ Gathering information
+☐ Long-term remediation
+☐ Finding the root cause
 
 > Gathering information is the first step taken when problem solving.
 
@@ -57,10 +53,13 @@ What is the first step of problem solving?
 
 What software tools are used to analyze network traffic to isolate problems? (Check all that apply)
 
-* **tcpdump**
-* **wireshark**
-* strace
-* top
+☑️ tcpdump
+
+☑️ wireshark
+
+☐ strace
+
+☐ top
 
 > The tcpdump tool is a powerful command-line analyzer that captures or "sniffs" TCP/IP packets.
 
@@ -72,68 +71,13 @@ What software tools are used to analyze network traffic to isolate problems? (Ch
 
 The strace (in Linux) tool allows us to see all of the _____ our program has made.
 
-* Network traffic
-* Disk writes
-* **System calls**
-* Connection requests
+☐ Network traffic
 
-> The strace command shows us all the system calls our program made. System calls are the calls that the programs running in our computer make to the running kernel.Documentation
-* **Long-term remediation**
-* Finding the root cause
-* Gathering information
+☐ Disk writes
 
-> Long-term remediation is part of the final step when problem solving.
+☑️ System calls
 
-<br>
-
-### Question 2
-
-Which tool can you use when debugging to look at library calls made by the software?
-
-* top
-* strace
-* tcpdump
-* **ltrace**
-
-> the ltrace tool is used to look at library calls made by the software.
-
-<br>
-
-### Question 3
-
-What is the first step of problem solving?
-
-* Prevention
-* **Gathering information**
-* Long-term remediation
-* Finding the root cause
-
-> Gathering information is the first step taken when problem solving.
-
-<br>
-
-### Question 4
-
-What software tools are used to analyze network traffic to isolate problems? (Check all that apply)
-
-* **tcpdump**
-* **wireshark**
-* strace
-* top
-
-> The tcpdump tool is a powerful command-line analyzer that captures or "sniffs" TCP/IP packets.
-
-> Wireshark is an open source tool for profiling network traffic and analyzing TCP/IP packets.
-
-<br>
-
-### Question 5
-
-The strace (in Linux) tool allows us to see all of the _____ our program has made.
-
-* Network traffic
-* Disk writes
-* **System calls**
-* Connection requests
+☐ Connection requests
 
 > The strace command shows us all the system calls our program made. System calls are the calls that the programs running in our computer make to the running kernel.
+
