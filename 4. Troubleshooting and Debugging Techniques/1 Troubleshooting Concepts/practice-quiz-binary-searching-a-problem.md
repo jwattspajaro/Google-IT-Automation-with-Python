@@ -100,18 +100,19 @@ Checking the right side
 ```
 
 <br>
+```
 
 ### Question 4
 
 When trying to find an error in a log file or output to the screen, what command can we use to review, say, the first 10 lines?
 
-* wc
-* tail
-* **head**
-* bisect
+* [ ] wc
+* [ ] tail
+* [x] **head**
+* [ ] bisect
 
 > The head command will print the first lines of a file, 10 lines by default.
-
+```
 <br>
 
 ### Question 5
